@@ -23,23 +23,24 @@ class AppThemeData {
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
-      fillColor: Colors.white,
+      fillColor: Colors.grey.shade100,
       filled: true,
-      contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       hintStyle: TextStyle(
-        color: Colors.grey.shade800,
-        fontWeight: FontWeight.w600,
+        fontSize: 14,
+        color: Colors.grey.shade500,
+        fontWeight: FontWeight.w500,
       ),
       border: OutlineInputBorder(
-        borderSide: BorderSide(color: AppColors.themeColor, width: 1.5),
+        borderSide: BorderSide.none,
         borderRadius: BorderRadius.circular(32),
       ),
       enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: AppColors.themeColor, width: 1.5),
+        borderSide: BorderSide.none,
         borderRadius: BorderRadius.circular(32),
       ),
       focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: AppColors.themeColor, width: 1.5),
+        borderSide: BorderSide.none,
         borderRadius: BorderRadius.circular(32),
       ),
     ),

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit_ecom/app/app_colors.dart';
+import 'package:ui_kit_ecom/features/auth/ui/screens/login_screen.dart';
+import 'package:ui_kit_ecom/features/auth/ui/screens/sign_up_screen.dart';
+
+import '../widgets/title_text_widget.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -45,7 +49,15 @@ class SplashScreen extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Spacer(),
-            ElevatedButton(onPressed: () {}, child: Text('Get Started')),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SignUpScreen()),
+                );
+              },
+              child: Text('Get Started'),
+            ),
             SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -68,7 +80,12 @@ class SplashScreen extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                      );
+                    },
                     icon: Icon(
                       Icons.arrow_forward,
                       size: 18,
@@ -82,19 +99,6 @@ class SplashScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class TitleTextWidget extends StatelessWidget {
-  final String text;
-  const TitleTextWidget({super.key, required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
     );
   }
 }
