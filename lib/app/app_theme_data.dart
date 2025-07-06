@@ -33,15 +33,15 @@ class AppThemeData {
       ),
       border: OutlineInputBorder(
         borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(32),
+        borderRadius: BorderRadius.circular(16),
       ),
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(32),
+        borderRadius: BorderRadius.circular(16),
       ),
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(32),
+        borderRadius: BorderRadius.circular(16),
       ),
     ),
   );

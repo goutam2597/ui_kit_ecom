@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
-import 'package:ui_kit_ecom/app/app_colors.dart';
 import 'package:ui_kit_ecom/features/auth/ui/screens/set_new_password_screen.dart';
 
 import '../widgets/user_avatar.dart';
@@ -78,8 +77,8 @@ class _OtpScreenState extends State<OtpScreen> {
                           width: 56,
                           height: 56,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey.shade800),
-                            borderRadius: BorderRadiusGeometry.circular(32),
+                            color: Colors.grey.shade100,
+                            borderRadius: BorderRadiusGeometry.circular(16),
                           ),
                         ),
                       ),

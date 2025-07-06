@@ -68,7 +68,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       padding: const EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         color: Colors.grey.shade100,
-                        borderRadius: BorderRadius.circular(32),
+                        borderRadius: BorderRadius.circular(16),
                       ),
                       child: Row(
                         children: [

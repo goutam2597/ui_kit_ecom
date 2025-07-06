@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:ui_kit_ecom/features/auth/ui/widgets/title_text_widget.dart';
 
 import 'login_password_screen.dart';

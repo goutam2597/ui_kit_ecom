@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_kit_ecom/features/auth/ui/screens/password_recovery_screen.dart';
+import 'package:ui_kit_ecom/features/auth/ui/screens/welcome_carousel.dart';
 
 import '../widgets/user_avatar.dart';
 
@@ -44,7 +44,7 @@ class _SetNewPasswordScreenState extends State<SetNewPasswordScreen> {
                       UserAvatar(),
                       const SizedBox(height: 4),
                       Text(
-                        'Setup New Password',
+                        'Set New Password',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -81,7 +81,12 @@ class _SetNewPasswordScreenState extends State<SetNewPasswordScreen> {
                         height: MediaQuery.of(context).size.height * 0.28,
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => WelcomeCarousel()),
+                          );
+                        },
                         child: const Text('Save'),
                       ),
                       const SizedBox(height: 12),
