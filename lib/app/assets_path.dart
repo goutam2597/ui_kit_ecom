@@ -14,6 +14,12 @@ class AssetsPath {
   static const String bubble07 = '$_imagesPath/bubble07.png';
   static const String bubble08 = '$_imagesPath/bubble08.png';
   static const String bubble09 = '$_imagesPath/bubble09.png';
+  static const String homeSlider = '$_imagesPath/homeslider.png';
+  static const String placeholderPer = '$_imagesPath/person_placeholeder.png';
+  static const String placeholderCategoryItem01 = '$_imagesPath/Placeholder_01.png';
+  static const String placeholderCategoryItem02 = '$_imagesPath/Placeholder_02.png';
+  static const String placeholderCategoryItem03 = '$_imagesPath/Placeholder_03.png';
+  static const String placeholderCategoryItem04 = '$_imagesPath/Placeholder_04.png';
 
 
 }

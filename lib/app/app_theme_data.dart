@@ -8,6 +8,9 @@ class AppThemeData {
       seedColor: AppColors.themeColor,
       brightness: Brightness.light,
     ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.white
+    ),
     textTheme: TextTheme(
       titleLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
     ),
