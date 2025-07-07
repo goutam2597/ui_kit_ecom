@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit_ecom/app/app_colors.dart';
+import 'package:ui_kit_ecom/app/assets_path.dart';
 import 'package:ui_kit_ecom/features/auth/ui/screens/login_screen.dart';
 import 'package:ui_kit_ecom/features/auth/ui/screens/sign_up_screen.dart';
 
@@ -32,7 +33,7 @@ class SplashScreen extends StatelessWidget {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   scale: 0.9,
-                  image: AssetImage('assets/images/logo.png'),
+                  image: AssetImage(AssetsPath.appLogo),
                 ),
               ),
             ),

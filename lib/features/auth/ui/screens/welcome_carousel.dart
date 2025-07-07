@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:ui_kit_ecom/features/auth/ui/screens/sign_up_screen.dart';
+import 'package:ui_kit_ecom/features/common/ui/screens/bottom_nav_bar.dart';
 
 import '../../../../app/app_colors.dart';
 
@@ -127,7 +127,14 @@ class _WelcomeCarouselState extends State<WelcomeCarousel> {
                         SizedBox(
                           width: 200,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => BottomNavBar(),
+                                ),
+                              );
+                            },
                             child: Text("Let's Start"),
                           ),
                         ),
